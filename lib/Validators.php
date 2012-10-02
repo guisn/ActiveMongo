@@ -63,7 +63,7 @@ class ActiveMongo_Validators
         if (isset_static_variable($class, 'validates_size_of')) {
             $validates = get_static_variable($class, 'validates_size_of');
         } else if (isset_static_variable($class, 'validates_length_of')) {
-            $validates = get_static_variables($class, 'validates_length_of');
+            $validates = get_static_variable($class, 'validates_length_of');
         }
 
         foreach ($validates as $property) {
